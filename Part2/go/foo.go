@@ -40,7 +40,6 @@ func incrementing(add_number chan<- int, finished chan<- bool) {
 	}
 
 	finished <- true
-	//TODO: signal that the goroutine is finished
 }
 
 func decrementing(add_number chan<- int, finished chan<- bool) {
@@ -49,7 +48,6 @@ func decrementing(add_number chan<- int, finished chan<- bool) {
 	}
 
 	finished <- true
-	//TODO: signal that the goroutine is finished
 }
 
 func main() {
